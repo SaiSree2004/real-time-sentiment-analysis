@@ -1,6 +1,6 @@
-# 🚀 Real-Time Social Media Sentiment Analysis Pipeline
+#  Real-Time Social Media Sentiment Analysis Pipeline
 
-## 📌 Project Overview
+##  Project Overview
 
 This project implements a **real-time data pipeline** that streams social media data, processes it for sentiment analysis, and stores the results in structured layers for analytics.
 
@@ -12,7 +12,7 @@ The dataset used in this project is based on the **Twitter Sentiment Analysis Da
 
 ---
 
-## 🏗 Architecture Overview
+##  Architecture Overview
 
 The pipeline processes streaming data through the following steps:
 
@@ -25,9 +25,9 @@ The pipeline processes streaming data through the following steps:
 
 ---
 
-## 🗂 Data Layers
+##  Data Layers
 
-### 🥉 Bronze Layer
+###  Bronze Layer
 
 **Table:** `social_catalog.raw.tweet_data`
 
@@ -41,7 +41,7 @@ The Bronze layer stores **raw incoming data exactly as it arrives from the strea
 
 ---
 
-### 🥈 Silver Layer
+###  Silver Layer
 
 **Table:** `social_catalog.processed.valid_tweets`
 
@@ -56,7 +56,7 @@ The Silver layer contains **cleaned and validated data**.Invalid records and cor
 
 ---
 
-### 🥇 Gold Layer
+###  Gold Layer
 
 **Table:** `social_catalog.analytics.sentiment_stats`
 
@@ -72,33 +72,33 @@ This layer is optimized for **analytics and business insights**.
 
 ---
 
-## ⚙️ Pipeline Features
+##  Pipeline Features
 
-### 🔄 Real-Time Streaming
+###  Real-Time Streaming
 
 - Uses **Databricks Structured Streaming**
 - Processes micro-batches every **10 seconds**
 
-### ✅ Data Quality Checks
+###  Data Quality Checks
 
 - Validation rules ensure only **valid tweets are processed and stored in the Silver layer**
 
-### ⚠️ Error Handling
+###  Error Handling
 
 - Checkpointing and logging are used to **recover from failures and maintain pipeline stability **
 
-### 🔐 Data Governance
+###  Data Governance
 
 -This project uses **Unity Catalog** to manages tables and access control across the data platform.
 
-### 📊 Monitoring and Alerts
+###  Monitoring and Alerts
 
 - Detects unusual sentiment patterns
 - Logs anomalies for investigation
 
 ---
 
-## 🛠 Technologies Used
+##  Technologies Used
 
 | Technology | Purpose |
 |-----------|--------|
@@ -115,7 +115,7 @@ This layer is optimized for **analytics and business insights**.
 
 ---
 
-## 👩‍💻 Roles and Responsibilities
+##  Roles and Responsibilities
 
 - Designed and implemented a **real-time sentiment analysis pipeline** using  Databricks and AWS services.
 - Streamed social media data using **Amazon Kinesis** and delivered it to Amazon S3 through Firehose.
@@ -130,7 +130,7 @@ This layer is optimized for **analytics and business insights**.
 
 ---
 
-## 🎯 Project Objective
+##  Project Objective
 
 The objective of this project is to build a **scalable real-time data pipeline** that analyzes social media sentiment and provides insights for **business decision-making and brand monitoring**.
 
