@@ -169,36 +169,42 @@ Alerts and logs are monitored using:
 
 Project Folder Structure
 
-Real-Time-Social-Media-Sentiment-Analysis-Pipeline/
+## 📁 Project Folder Structure
+
+```
+Real-Time-Social-Media-Sentiment-Analysis-Pipeline
 │
-├── Datasets/
-│ └── raw_data/
+├── Datasets
+│   └── raw_data
 │
-├── Development/
-│ ├── bronze/
-│ │ └── bronze_code.py
-│ ├── silver/
-│ │ └── silver_code.py
-│ ├── gold/
-│ │ └── gold_code.py
-│ └── DAG/
-│ └── dag_code.py
+├── Development
+│   ├── Bronze
+│   │   └── bronze_code.py
+│   ├── Silver
+│   │   └── silver_code.py
+│   ├── Gold
+│   │   └── gold_code.py
+│   └── DAG
+│       └── dag_code.py
 │
-├── Testing/
-│ ├── test_bronze.py
-│ ├── test_silver.py
-│ └── test_gold.py
+├── Testing
+│   ├── test_bronze.py
+│   ├── test_silver.py
+│   └── test_gold.py
 │
-├── Dashboard/
-│ └── images/
-│ ├── architecture_diagram.png
-│ ├── tweet_dashboard.png
-│ ├── sentiment_dashboard.png
-│ ├── trend_dashboard.png
-│ ├── users_influence_dashboard.png
-│ └── overview_dashboard.png
+├── Dashboard
+│   ├── images
+│   │   ├── final-arch.png
+│   │   ├── tweet_dashboard.png
+│   │   ├── sentiment_dashboard.png
+│   │   ├── trend_dashboard.png
+│   │   ├── users_influence_dashboard.png
+│   │   └── overview_dashboard.png
+│   └── dashboard_queries.ipynb
 │
 └── README.md
+```
+
 
 ---
 
