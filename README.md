@@ -106,6 +106,10 @@ Generate **business-ready datasets** for dashboards.
 * **Aggregations** (sentiment, influence)
 * **Metrics Tables** (KPIs, trends, distributions)
 
+### Data Model — Star Schema (Gold Layer)
+
+![Star Schema Gold Layer](Dashboard/images/data_model.svg)
+
 ---
 
 ## Pipeline Orchestration
@@ -119,6 +123,10 @@ Orchestrated using **Apache Airflow DAGs**
 * Gold aggregation
 
 Runs **daily at midnight**
+
+### Airflow DAG
+
+![Airflow DAG](Dashboard/images/airflow.jpeg)
 
 ---
 
@@ -164,6 +172,8 @@ Real-Time-Social-Media-Sentiment-Analysis-Pipeline
 ├── Dashboard
 │   ├── images
 │   │   ├── final-arch.png
+│   │   ├── airflow.jpeg
+│   │   ├── star_schema_gold_layer.svg
 │   │   ├── tweet_dashboard.png
 │   │   ├── sentiment_dashboard.png
 │   │   ├── trend_dashboard.png
@@ -178,25 +188,35 @@ Real-Time-Social-Media-Sentiment-Analysis-Pipeline
 
 ## Analytics Dashboards
 
+### Overview
+
+![Overview Dashboard](Dashboard/images/overview_dashboard.png)
+
+Provides a high-level summary of tweet volume, user distribution, sentiment breakdown, engagement trends, and top topics for Jan 2025.
+
 ### Tweet Activity
 
 ![Tweet Dashboard](Dashboard/images/tweet_dashboard.png)
+
+Analyzes tweet activity patterns across hourly, daily, and weekly dimensions including impressions, engagement mix, and total vs valid tweet volume.
 
 ### Sentiment Analysis
 
 ![Sentiment Dashboard](Dashboard/images/sentiment_dashboard.png)
 
+Examines dominant sentiment distribution and score trends across key topics — AI, Cloud, Finance, and Sports.
+
 ### Trend Analysis
 
 ![Trend Dashboard](Dashboard/images/trend_dashboard.png)
+
+Tracks tweet trend strength categories, sentiment index, and volume patterns across multiple countries over time.
 
 ### Users & Influence
 
 ![Users Dashboard](Dashboard/images/users_influence_dashboard.png)
 
-### Overview
-
-![Overview Dashboard](Dashboard/images/overview_dashboard.png)
+Analyzes user demographics, follower segments, influence score distribution, and engagement behavior across countries.
 
 ---
 
@@ -274,7 +294,6 @@ This project is for **educational and research purposes**.
 Project Lead
 
 Sahana P
-
 
 Team Members
 
