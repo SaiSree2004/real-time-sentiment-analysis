@@ -52,7 +52,7 @@ The pipeline integrates:
 
 ### End-to-End Architecture
 
-![Architecture Diagram](Dashboard/images/final-arch.png)
+![Architecture Diagram](Dashboard/images/architecture.png)
 
 ---
 
@@ -126,7 +126,7 @@ Example models:
 
 ### Data Model — Star Schema (Gold Layer)
 
-![Star Schema Gold Layer](Dashboard/images/star_schema_gold_layer.svg)
+![Star Schema Gold Layer](Dashboard/images/data_model.svg)
 
 ---
 
